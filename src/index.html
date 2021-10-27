@@ -1,0 +1,10 @@
+<main id="app" :style="[{color: randomColor}, {backgroundColor: randomColor}]">
+  <div id="quote-box" class="quote-box">
+    <p id="text" class="text"><i class="fa fa-quote-left"></i> {{quote}}</p>
+    <span id="author" class="author">- {{author}}</span>
+    <div class="button-bar"> 
+      <a id="tweet-quote" class="tweet-quote icon" :href="tweet" :style="{backgroundColor: randomColor}"><i class="fa fa-3x fa-twitter" ></i></a>
+      <button id="new-quote" class="new-quote" @click="getQuote" :style="{backgroundColor: randomColor}">New quote</button>
+    </div>
+  </div>
+</main>
